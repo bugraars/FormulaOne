@@ -1,0 +1,629 @@
+{
+	"info": {
+		"_postman_id": "2a94ee76-0f60-477f-b7ee-17e758485b7e",
+		"name": "formula",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25090773"
+	},
+	"item": [
+		{
+			"name": "uploads",
+			"item": [
+				{
+					"name": "seed-data-from-csv",
+					"item": [
+						{
+							"name": "csv",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "csv-files",
+											"type": "file",
+											"src": [
+												"/Users/bugraars/Desktop/csv/circuits.csv",
+												"/Users/bugraars/Desktop/csv/constructor_results.csv",
+												"/Users/bugraars/Desktop/csv/constructor_standings.csv",
+												"/Users/bugraars/Desktop/csv/constructors.csv",
+												"/Users/bugraars/Desktop/csv/driver_standings.csv",
+												"/Users/bugraars/Desktop/csv/drivers.csv",
+												"/Users/bugraars/Desktop/csv/lap_times.csv",
+												"/Users/bugraars/Desktop/csv/pit_stops.csv",
+												"/Users/bugraars/Desktop/csv/qualifying.csv",
+												"/Users/bugraars/Desktop/csv/races.csv",
+												"/Users/bugraars/Desktop/csv/results.csv",
+												"/Users/bugraars/Desktop/csv/seasons.csv",
+												"/Users/bugraars/Desktop/csv/sprint_results.csv",
+												"/Users/bugraars/Desktop/csv/status.csv"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/uploads/csv",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"uploads",
+										"csv"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"description": "Bu kısımda projeye **ilk başladığımda** generic olarak csv > interface > create table > insert data şeklinde post isteği ile başlayan generic bir yapı kullandım ancak daha sonrasında deadline ve verilerin karmaşık olabilmesinden dolayı vazgeçtim ancak bu kısmı silmeyerek istenilirse eski kodları da inceleyebilirsiniz diye düşündüm Teşekkürler.\n\ncsv dosyaları post isteği ile upload edilmesine yarayan bir yapıda."
+		},
+		{
+			"name": "drivers-routes",
+			"item": [
+				{
+					"name": "statistics",
+					"item": [
+						{
+							"name": "wins",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drivers/statistics/4/wins",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drivers",
+										"statistics",
+										"4",
+										"wins"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dnfs(incompate)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drivers/statistics/4/dnfs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drivers",
+										"statistics",
+										"4",
+										"dnfs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "podiums",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drivers/statistics/4/podiums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drivers",
+										"statistics",
+										"4",
+										"podiums"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "average-lap-times",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drivers/statistics/4/average-lap-times",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drivers",
+										"statistics",
+										"4",
+										"average-lap-times"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "statistics-w-seasons",
+					"item": [
+						{
+							"name": "average-lap-times",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drivers/statistics/2009/1/average-lap-times",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drivers",
+										"statistics",
+										"2009",
+										"1",
+										"average-lap-times"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "average-pit-times",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drivers/statistics/2011/841/average-pit-times",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drivers",
+										"statistics",
+										"2011",
+										"841",
+										"average-pit-times"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pit-counts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drivers/statistics/2011/841/pit-counts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drivers",
+										"statistics",
+										"2011",
+										"841",
+										"pit-counts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pit-analysis",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drivers/statistics/2011/841/pit-analysis",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drivers",
+										"statistics",
+										"2011",
+										"841",
+										"pit-analysis"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "list-drivers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/drivers/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drivers",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "drivers-search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"forename\": \"Lewis\",\n    // \"surname\": \"Hamilton\",\n    \"nationality\": \"British\"\n    // \"dob\": \"1985-01-07\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/drivers/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drivers",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "constructor-routes",
+			"item": [
+				{
+					"name": "statistics",
+					"item": [
+						{
+							"name": "statistics",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/constructors/statistics",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"constructors",
+										"statistics"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "wins",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/constructors/statistics/14/wins",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"constructors",
+										"statistics",
+										"14",
+										"wins"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "podiums",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/constructors/statistics/1/podiums",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"constructors",
+										"statistics",
+										"1",
+										"podiums"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "constructors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/constructors/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"constructors",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "constructors-search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ferrari\",\n    \"nationality\": \"Italian\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/constructors/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"constructors",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "seasons-routes",
+			"item": [
+				{
+					"name": "seasons-results",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/seasons/2023/results",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"seasons",
+								"2023",
+								"results"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seasons-podiums",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ferrari\",\n    \"nationality\": \"Italian\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/seasons/2023/podiums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"seasons",
+								"2023",
+								"podiums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seasons-wins",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/seasons/2013/wins",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"seasons",
+								"2013",
+								"wins"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "circuits",
+			"item": [
+				{
+					"name": "statistics-circuits",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/circuits/statistics/circuit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"circuits",
+								"statistics",
+								"circuit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"ibrahim\",\n  \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"pelin\",\n  \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
