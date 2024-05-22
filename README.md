@@ -24,19 +24,19 @@ DB_DATABASE = 'formula_one_db'
 JWT_SECRET = "formula1"
 ```
 
-## Kullanılan Kütüphaneler
-bcrypt: A library to help you hash passwords.
-cookie-parser: Parse Cookie header and populate req.cookies with an object keyed by the cookie names.
-csv-parser: A streaming csv parser inspired by binary-csv that aims to be faster than everyone else.
-dotenv: Loads environment variables from a .env file into process.env.
-express: Fast, unopinionated, minimalist web framework for Node.js.
-express-validator: An express.js middleware for validator.
-jsonwebtoken: An implementation of JSON Web Tokens.
-pg: Non-blocking PostgreSQL client for Node.js. Pure JavaScript and optional native libpq bindings.
-swagger-jsdoc: Generates swagger doc based on JSDoc.
-swagger-ui-express: Swagger UI Express Middleware.
-ts-node: TypeScript execution and REPL for node.js, with source map support.
-nodemon: A tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+## Used Libraries - Kullanılan Kütüphaneler
+- **bcrypt**: A library to help you hash passwords.
+- **cookie-parser**: Parse Cookie header and populate req.cookies with an object keyed by the cookie names.
+- **csv-parser**: A streaming csv parser inspired by binary-csv that aims to be faster than everyone else.
+- **dotenv**: Loads environment variables from a .env file into process.env.
+- **express**: Fast, unopinionated, minimalist web framework for Node.js.
+- **express-validator**: An express.js middleware for validator.
+- **jsonwebtoken**: An implementation of JSON Web Tokens.
+- **pg**: Non-blocking PostgreSQL client for Node.js. Pure JavaScript and optional native libpq bindings.
+- **swagger-jsdoc**: Generates swagger doc based on JSDoc.
+- **swagger-ui-express**: Swagger UI Express Middleware.
+- **ts-node**: TypeScript execution and REPL for node.js, with source map support.
+- **nodemon**: A tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
 ## Proje Yapısı
 ```sh
