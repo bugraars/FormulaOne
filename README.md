@@ -1,6 +1,6 @@
 ![Formula 1 Logo](https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg)
 
-# Formula Projesi
+# Formula One Project - Formula 1 Projesi
 Bu proje, Formula 1 verilerini yönetmek için bir REST API sağlar
 Ayrıca formula.postman_collection.json dosyasını, postman'a import ederek test edebilirsiniz.
 
